@@ -1,0 +1,19 @@
+.article-title {
+  font-size: 34rpx;
+  font-weight: 800;
+  color: #5b3617;
+  margin-bottom: 12rpx;
+}
+
+.article-summary {
+  font-size: 28rpx;
+  color: #a4652c;
+  margin-bottom: 14rpx;
+}
+
+.article-content {
+  font-size: 28rpx;
+  line-height: 1.8;
+  color: #6c553e;
+}
+

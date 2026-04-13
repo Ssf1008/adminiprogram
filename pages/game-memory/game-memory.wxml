@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="card game-box">
+    <view class="section-title">数字记忆</view>
+    <view class="muted">第 {{round}} 轮 / 共 3 轮</view>
+    <view class="number-board {{hidden ? 'hidden' : ''}}">{{displayNumber}}</view>
+    <view class="tips">{{tips}}</view>
+    <input wx:if="{{phase === 'input'}}" class="input" type="number" maxlength="10" placeholder="请输入数字" value="{{userInput}}" bindinput="onInput" />
+    <button wx:if="{{phase === 'input'}}" class="primary-btn" bindtap="submitAnswer">提交答案</button>
+  </view>
+</view>
+

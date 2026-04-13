@@ -1,0 +1,26 @@
+.game-box {
+  text-align: center;
+  padding-top: 60rpx;
+}
+
+.number-board {
+  margin: 40rpx 0 20rpx;
+  padding: 36rpx 20rpx;
+  border-radius: 24rpx;
+  background: #5c3719;
+  color: #fff8f0;
+  font-size: 72rpx;
+  font-weight: 800;
+  letter-spacing: 16rpx;
+}
+
+.hidden {
+  background: #c3a47c;
+}
+
+.tips {
+  font-size: 30rpx;
+  color: #785839;
+  margin-bottom: 24rpx;
+}
+

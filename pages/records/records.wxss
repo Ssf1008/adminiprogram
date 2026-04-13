@@ -1,0 +1,19 @@
+.record-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.record-name {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #553419;
+}
+
+.record-score {
+  font-size: 30rpx;
+  color: #b46220;
+  font-weight: 700;
+}
+

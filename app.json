@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/games/games",
+    "pages/game-memory/game-memory",
+    "pages/game-logic/game-logic",
+    "pages/game-calc/game-calc",
+    "pages/records/records",
+    "pages/knowledge/knowledge",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "认知训练助手",
+    "navigationBarBackgroundColor": "#f5ede0",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f1e7",
+    "backgroundTextStyle": "light"
+  },
+  "sitemapLocation": "sitemap.json"
+}
+

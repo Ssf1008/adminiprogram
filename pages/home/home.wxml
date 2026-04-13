@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="card banner">
+    <view class="user-row">
+      <view wx:if="{{userInfo.avatar}}" class="avatar-shell">
+        <image class="user-avatar" src="{{userInfo.avatar}}" mode="aspectFill"></image>
+      </view>
+      <view wx:else class="user-avatar placeholder-avatar">头像</view>
+      <view class="user-meta">
+        <view class="hello">您好，{{userInfo.nickname}}</view>
+        <view class="muted light-text">欢迎回来，继续今天的认知训练</view>
+      </view>
+    </view>
+    <view class="headline">今天也来做一组温和的认知训练吧</view>
+    <view class="muted light-text">每日 10~20 分钟，帮助维持记忆、逻辑与计算能力</view>
+    <button class="primary-btn start-btn" data-url="/pages/games/games" bindtap="navigate">立即开始</button>
+  </view>
+
+  <view class="card">
+    <view class="section-title">训练概况</view>
+    <view class="grid">
+      <view class="stat-item">
+        <view class="label">累计训练</view>
+        <view class="value">{{stats.trainCount}} 次</view>
+      </view>
+      <view class="stat-item">
+        <view class="label">累计时长</view>
+        <view class="value">{{stats.totalDuration}} 秒</view>
+      </view>
+      <view class="stat-item">
+        <view class="label">平均得分</view>
+        <view class="value">{{stats.avgScore}}</view>
+      </view>
+      <view class="stat-item">
+        <view class="label">平均正确率</view>
+        <view class="value">{{stats.avgAccuracy}}%</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">快捷入口</view>
+    <view class="quick-list">
+      <view class="quick-item" wx:for="{{quickLinks}}" wx:key="name" data-url="{{item.url}}" bindtap="navigate">
+        <view class="quick-name">{{item.name}}</view>
+        <view class="quick-arrow">›</view>
+      </view>
+    </view>
+  </view>
+</view>

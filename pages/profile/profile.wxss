@@ -1,0 +1,44 @@
+.profile-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-avatar-shell {
+  width: 132rpx;
+  height: 132rpx;
+  margin-bottom: 18rpx;
+}
+
+.profile-avatar {
+  width: 132rpx;
+  height: 132rpx;
+  border-radius: 50%;
+  border: 4rpx solid #efc283;
+  background: #fff7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-placeholder {
+  color: #9d6c38;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.profile-name {
+  font-size: 38rpx;
+  font-weight: 800;
+  color: #553419;
+  margin-bottom: 10rpx;
+}
+
+.field {
+  margin-bottom: 22rpx;
+}
+
+.logout-btn {
+  margin-top: 18rpx;
+}

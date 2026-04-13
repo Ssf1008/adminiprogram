@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="card intro">
+    <view class="section-title">训练项目</view>
+    <view class="muted">选择一种小游戏开始训练，系统会自动记录得分、时长与完成度。</view>
+  </view>
+
+  <view class="game-card card" wx:for="{{games}}" wx:key="code" data-code="{{item.code}}" bindtap="goGame">
+    <view class="game-header">
+      <view>
+        <view class="game-name">{{item.name}}</view>
+        <view class="game-category">{{item.category}}</view>
+      </view>
+      <view class="game-go">开始</view>
+    </view>
+    <view class="game-desc">{{item.desc}}</view>
+  </view>
+</view>
+

@@ -1,0 +1,77 @@
+page {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top, #fff9ec 0%, #f6ecd6 38%, #ead8b0 100%);
+  color: #3f2f1f;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.container {
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.card {
+  background: rgba(255, 250, 241, 0.92);
+  border-radius: 28rpx;
+  box-shadow: 0 16rpx 40rpx rgba(120, 85, 42, 0.12);
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+}
+
+.section-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #593d23;
+  margin-bottom: 20rpx;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #d67f32, #b65b1f);
+  color: #fff;
+  border-radius: 999rpx;
+  font-size: 32rpx;
+  padding: 18rpx 28rpx;
+  border: none;
+}
+
+.secondary-btn {
+  background: #fff3df;
+  color: #8c541f;
+  border-radius: 999rpx;
+  font-size: 30rpx;
+  padding: 16rpx 24rpx;
+  border: 2rpx solid #efc283;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+}
+
+.label {
+  font-size: 28rpx;
+  color: #7b6040;
+}
+
+.value {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #4b331b;
+}
+
+.input {
+  background: #fffaf3;
+  border: 2rpx solid #edd4ae;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  font-size: 30rpx;
+  margin-top: 12rpx;
+}
+
+.muted {
+  color: #8d7861;
+  font-size: 26rpx;
+}
+

@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="card calc-box">
+    <view class="section-title">快速计算</view>
+    <view class="muted">第 {{round}} 题 / 共 5 题</view>
+    <view class="formula">{{current.a}} {{current.op}} {{current.b}} = ?</view>
+    <input class="input" type="number" placeholder="请输入答案" value="{{inputValue}}" bindinput="onInput" />
+    <button class="primary-btn" bindtap="submit">提交答案</button>
+  </view>
+</view>
+

@@ -1,0 +1,28 @@
+<view class="container login-page">
+  <view wx:if="{{checking}}" class="checking-box">正在检查登录状态…</view>
+
+  <view wx:else class="hero card">
+    <view class="badge">认知训练 · 适老化设计</view>
+    <view class="title">脑力花园</view>
+    <view class="subtitle">帮助中老年人坚持记忆、逻辑与计算训练，陪伴式记录每日认知状态。</view>
+
+    <view class="auth-panel">
+      <button class="avatar-button" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+        <view wx:if="{{avatarReady}}" class="avatar-shell">
+          <image class="avatar-preview" src="{{avatarUrl}}" mode="aspectFill"></image>
+        </view>
+        <view wx:else class="avatar-placeholder">头像</view>
+        <view class="avatar-text">点击获取微信头像</view>
+      </button>
+
+      <view class="nickname-block">
+        <view class="nickname-label">微信昵称</view>
+        <view class="nickname-hint">点击输入框后可选“使用微信昵称”</view>
+        <input class="input nickname-input" type="nickname" placeholder="请输入微信昵称" value="{{nickname}}" bindinput="onNicknameInput" bindblur="onNicknameBlur" maxlength="20" />
+      </view>
+    </view>
+
+    <button class="primary-btn login-btn" loading="{{loading}}" bindtap="handleWechatLogin">微信快捷登录</button>
+    <view class="muted tip">请先点击头像获取微信头像，再点击昵称输入框填写或选择微信昵称，最后完成登录。</view>
+  </view>
+</view>

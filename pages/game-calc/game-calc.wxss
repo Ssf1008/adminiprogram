@@ -1,0 +1,12 @@
+.calc-box {
+  text-align: center;
+  padding-top: 50rpx;
+}
+
+.formula {
+  font-size: 74rpx;
+  font-weight: 800;
+  color: #5b3313;
+  margin: 56rpx 0 36rpx;
+}
+

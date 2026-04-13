@@ -1,0 +1,45 @@
+.intro {
+  margin-bottom: 18rpx;
+}
+
+.game-card {
+  background: linear-gradient(180deg, rgba(255,248,235,.96), rgba(255,240,214,.96));
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14rpx;
+}
+
+.game-name {
+  font-size: 38rpx;
+  font-weight: 800;
+  color: #59361a;
+}
+
+.game-category {
+  margin-top: 8rpx;
+  display: inline-block;
+  background: #ffe3b7;
+  color: #9b5d21;
+  border-radius: 999rpx;
+  padding: 8rpx 16rpx;
+  font-size: 24rpx;
+}
+
+.game-go {
+  background: #bf6b27;
+  color: white;
+  padding: 14rpx 24rpx;
+  border-radius: 999rpx;
+  font-size: 28rpx;
+}
+
+.game-desc {
+  color: #6f5538;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
+

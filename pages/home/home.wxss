@@ -1,0 +1,89 @@
+.banner {
+  background: linear-gradient(145deg, #6c4320, #b96d2d 65%, #efbf7b);
+  color: #fff7ee;
+}
+
+.user-row {
+  display: flex;
+  align-items: center;
+  gap: 18rpx;
+  margin-bottom: 16rpx;
+}
+
+.avatar-shell {
+  width: 92rpx;
+  height: 92rpx;
+}
+
+.user-avatar {
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255, 247, 238, 0.55);
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-avatar {
+  color: rgba(255, 247, 238, 0.88);
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.user-meta {
+  flex: 1;
+}
+
+.hello {
+  font-size: 32rpx;
+  font-weight: 700;
+  opacity: 0.98;
+}
+
+.light-text {
+  color: rgba(255, 247, 238, 0.82);
+}
+
+.headline {
+  font-size: 42rpx;
+  line-height: 1.4;
+  font-weight: 800;
+  margin: 18rpx 0;
+}
+
+.start-btn {
+  margin-top: 28rpx;
+}
+
+.stat-item {
+  background: #fff6e8;
+  padding: 20rpx;
+  border-radius: 22rpx;
+}
+
+.quick-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.quick-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff7eb;
+  border-radius: 22rpx;
+  padding: 24rpx;
+}
+
+.quick-name {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.quick-arrow {
+  font-size: 40rpx;
+  color: #9d6c38;
+}

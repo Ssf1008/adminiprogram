@@ -1,0 +1,27 @@
+{
+    "appid": "wxfa8b23da716cbf55",
+    "compileType": "miniprogram",
+    "libVersion": "2.32.3",
+    "setting": {
+        "es6": true,
+        "postcss": true,
+        "minified": false,
+        "enhance": false,
+        "compileHotReLoad": false,
+        "showShadowRootInWxmlPanel": false,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        }
+    },
+    "condition": {},
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    }
+}

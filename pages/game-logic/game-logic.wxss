@@ -1,0 +1,28 @@
+.logic-box {
+  text-align: center;
+}
+
+.question {
+  font-size: 62rpx;
+  letter-spacing: 12rpx;
+  color: #5c3416;
+  margin: 54rpx 0 36rpx;
+  font-weight: 700;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.option {
+  background: #fff3de;
+  border: 2rpx solid #f1cd97;
+  border-radius: 22rpx;
+  padding: 24rpx;
+  font-size: 40rpx;
+  color: #7a4a1d;
+  font-weight: 700;
+}
+

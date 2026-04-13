@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="card logic-box">
+    <view class="section-title">图形规律</view>
+    <view class="muted">第 {{round}} 轮 / 共 3 轮</view>
+    <view class="question">{{current.q}}</view>
+    <view class="options">
+      <view class="option" wx:for="{{current.options}}" wx:key="*this" data-option="{{item}}" bindtap="choose">{{item}}</view>
+    </view>
+  </view>
+</view>
+

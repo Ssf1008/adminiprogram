@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="card" wx:if="{{stats}}">
+    <view class="section-title">统计概览</view>
+    <view class="grid">
+      <view>
+        <view class="label">训练次数</view>
+        <view class="value">{{stats.trainCount}}</view>
+      </view>
+      <view>
+        <view class="label">总时长</view>
+        <view class="value">{{stats.totalDuration}} 秒</view>
+      </view>
+      <view>
+        <view class="label">平均得分</view>
+        <view class="value">{{stats.avgScore}}</view>
+      </view>
+      <view>
+        <view class="label">正确率</view>
+        <view class="value">{{stats.avgAccuracy}}%</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card" wx:for="{{records}}" wx:key="id">
+    <view class="record-top">
+      <view class="record-name">{{item.gameName}}</view>
+      <view class="record-score">{{item.score}} 分</view>
+    </view>
+    <view class="muted">训练时长：{{item.duration}} 秒</view>
+    <view class="muted">完成度：{{item.completionRate}}% ｜ 正确率：{{item.accuracyRate}}%</view>
+    <view class="muted">训练时间：{{item.recordTime}}</view>
+  </view>
+</view>
+
