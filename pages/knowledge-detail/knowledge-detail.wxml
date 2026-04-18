@@ -1,0 +1,18 @@
+<view class="container" wx:if="{{detail}}">
+  <view class="detail-card">
+    <view wx:if="{{detail.coverImage}}" class="detail-cover-wrap">
+      <image class="detail-cover" src="{{detail.coverImage}}" mode="aspectFill"></image>
+    </view>
+    <view wx:else class="detail-cover fallback-cover">
+      <view class="fallback-title">{{detail.title}}</view>
+      <view class="fallback-subtitle">健康知识详情</view>
+    </view>
+
+    <view class="detail-body">
+      <view class="detail-title">{{detail.title}}</view>
+      <view class="detail-summary">{{detail.summary}}</view>
+      <view class="detail-content">{{detail.content}}</view>
+    </view>
+  </view>
+</view>
+

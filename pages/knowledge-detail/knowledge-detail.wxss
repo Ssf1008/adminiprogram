@@ -1,25 +1,24 @@
-.knowledge-card {
+.detail-card {
   overflow: hidden;
   border-radius: 28rpx;
   background: #fffaf2;
   box-shadow: 0 12rpx 28rpx rgba(140, 100, 52, 0.08);
-  margin-bottom: 26rpx;
 }
 
-.knowledge-cover-wrap {
-  height: 260rpx;
+.detail-cover-wrap {
+  height: 300rpx;
 }
 
-.knowledge-cover {
+.detail-cover {
   width: 100%;
-  height: 260rpx;
+  height: 300rpx;
   display: block;
   background: linear-gradient(135deg, #f0dfc2, #e6c18f);
 }
 
 .fallback-cover {
-  height: 260rpx;
-  padding: 34rpx;
+  height: 300rpx;
+  padding: 36rpx;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -32,6 +31,7 @@
 .fallback-title {
   font-size: 42rpx;
   font-weight: 800;
+  line-height: 1.4;
 }
 
 .fallback-subtitle {
@@ -40,27 +40,30 @@
   color: rgba(255, 248, 239, 0.86);
 }
 
-.knowledge-body {
-  padding: 26rpx 28rpx 28rpx;
+.detail-body {
+  padding: 30rpx;
 }
 
-.article-title {
-  font-size: 36rpx;
+.detail-title {
+  font-size: 40rpx;
+  line-height: 1.4;
   font-weight: 800;
   color: #5b3617;
-  margin-bottom: 14rpx;
 }
 
-.article-summary {
-  font-size: 28rpx;
-  line-height: 1.7;
-  color: #a4652c;
-}
-
-.knowledge-link {
+.detail-summary {
   margin-top: 18rpx;
-  font-size: 24rpx;
-  color: #7e552a;
+  font-size: 28rpx;
+  line-height: 1.8;
+  color: #a4652c;
   font-weight: 700;
+}
+
+.detail-content {
+  margin-top: 24rpx;
+  font-size: 30rpx;
+  line-height: 1.9;
+  color: #6c553e;
+  white-space: pre-wrap;
 }
 

@@ -21,6 +21,47 @@
     </view>
   </view>
 
+  <view class="card">
+    <view class="analysis-top">
+      <view class="section-title">AI 训练建议</view>
+      <button class="analysis-btn" bindtap="generateAnalysis" disabled="{{analysisLoading}}">
+        {{analysisLoading ? '生成中...' : (analysis ? '重新生成' : '生成建议')}}
+      </button>
+    </view>
+
+    <view class="analysis-tip {{analysisLoading ? 'is-loading' : ''}}">{{analysisTip}}</view>
+
+    <view class="analysis-box {{analysisLoading && analysis ? 'is-refreshing' : ''}}">
+      <block wx:if="{{analysis}}">
+        <view class="analysis-score">综合评分：{{analysis.overallScore}}</view>
+        <view class="analysis-summary">{{analysis.summary}}</view>
+
+        <view class="analysis-section">
+          <view class="analysis-label">表现亮点</view>
+          <view class="analysis-item" wx:for="{{analysis.strengths}}" wx:key="index">• {{item}}</view>
+        </view>
+
+        <view class="analysis-section">
+          <view class="analysis-label">关注点</view>
+          <view class="analysis-item" wx:for="{{analysis.risks}}" wx:key="index">• {{item}}</view>
+        </view>
+
+        <view class="analysis-section">
+          <view class="analysis-label">训练建议</view>
+          <view class="analysis-item" wx:for="{{analysis.suggestions}}" wx:key="index">• {{item}}</view>
+        </view>
+      </block>
+
+      <block wx:else>
+        <view class="analysis-empty">
+          <view class="analysis-empty-line short"></view>
+          <view class="analysis-empty-line"></view>
+          <view class="analysis-empty-line"></view>
+        </view>
+      </block>
+    </view>
+  </view>
+
   <view class="card" wx:for="{{records}}" wx:key="id">
     <view class="record-top">
       <view class="record-name">{{item.gameName}}</view>

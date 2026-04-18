@@ -57,6 +57,22 @@
   margin-top: 28rpx;
 }
 
+.logout-btn {
+  margin: 0;
+  padding: 0 22rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  border-radius: 999rpx;
+  border: 2rpx solid rgba(255, 247, 238, 0.45);
+  background: rgba(255, 247, 238, 0.14);
+  color: #fff7ee;
+  font-size: 24rpx;
+}
+
+.logout-btn::after {
+  border: none;
+}
+
 .stat-item {
   background: #fff6e8;
   padding: 20rpx;

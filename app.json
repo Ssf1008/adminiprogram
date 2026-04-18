@@ -8,6 +8,7 @@
     "pages/game-calc/game-calc",
     "pages/records/records",
     "pages/knowledge/knowledge",
+    "pages/knowledge-detail/knowledge-detail",
     "pages/profile/profile"
   ],
   "window": {

@@ -59,6 +59,25 @@ Page({
     wx.navigateTo({ url: e.currentTarget.dataset.url })
   },
 
+  handleLogout() {
+    wx.showModal({
+      title: '提示',
+      content: '确定要退出当前账号吗？',
+      success: (res) => {
+        if (!res.confirm) {
+          return
+        }
+        wx.removeStorageSync('userInfo')
+        wx.removeStorageSync('token')
+        wx.removeStorageSync('tokenExpireAt')
+        app.globalData.userInfo = null
+        app.globalData.token = ''
+        app.globalData.tokenExpireAt = 0
+        wx.reLaunch({ url: '/pages/login/login' })
+      }
+    })
+  },
+
   onShareAppMessage() {
     return {
       title: '我正在使用脑力花园进行认知训练',

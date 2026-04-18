@@ -1,8 +1,18 @@
 <view class="container">
-  <view class="card" wx:for="{{list}}" wx:key="id">
-    <view class="article-title">{{item.title}}</view>
-    <view class="article-summary">{{item.summary}}</view>
-    <view class="article-content">{{item.content}}</view>
+  <view class="knowledge-card" wx:for="{{list}}" wx:key="id" data-id="{{item.id}}" bindtap="openDetail">
+    <view wx:if="{{item.coverImage}}" class="knowledge-cover-wrap">
+      <image class="knowledge-cover" src="{{item.coverImage}}" mode="aspectFill"></image>
+    </view>
+    <view wx:else class="knowledge-cover fallback-cover">
+      <view class="fallback-title">健康知识</view>
+      <view class="fallback-subtitle">认知训练 · 科学科普</view>
+    </view>
+
+    <view class="knowledge-body">
+      <view class="article-title">{{item.title}}</view>
+      <view class="article-summary">{{item.summary}}</view>
+      <view class="knowledge-link">点击查看详情</view>
+    </view>
   </view>
 </view>
 

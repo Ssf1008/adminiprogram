@@ -17,7 +17,7 @@
 
       <view class="nickname-block">
         <view class="nickname-label">微信昵称</view>
-        <view class="nickname-hint">点击输入框后可选“使用微信昵称”</view>
+        <!-- <view class="nickname-hint">点击输入框后可选“使用微信昵称”</view> -->
         <input class="input nickname-input" type="nickname" placeholder="请输入微信昵称" value="{{nickname}}" bindinput="onNicknameInput" bindblur="onNicknameBlur" maxlength="20" />
       </view>
     </view>

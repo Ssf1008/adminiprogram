@@ -18,6 +18,14 @@ Page({
     } catch (e) {
       wx.showToast({ title: '知识加载失败', icon: 'none' })
     }
+  },
+
+  openDetail(e) {
+    const { id } = e.currentTarget.dataset
+    if (!id) {
+      return
+    }
+    wx.navigateTo({ url: `/pages/knowledge-detail/knowledge-detail?id=${id}` })
   }
 })
 

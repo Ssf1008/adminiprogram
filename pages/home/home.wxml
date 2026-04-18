@@ -9,6 +9,7 @@
         <view class="hello">您好，{{userInfo.nickname}}</view>
         <view class="muted light-text">欢迎回来，继续今天的认知训练</view>
       </view>
+      <button class="logout-btn" bindtap="handleLogout">退出登录</button>
     </view>
     <view class="headline">今天也来做一组温和的认知训练吧</view>
     <view class="muted light-text">每日 10~20 分钟，帮助维持记忆、逻辑与计算能力</view>

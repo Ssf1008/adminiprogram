@@ -17,3 +17,94 @@
   font-weight: 700;
 }
 
+.analysis-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rpx;
+  margin-bottom: 18rpx;
+}
+
+.analysis-btn {
+  margin: 0;
+  padding: 0 24rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  border-radius: 999rpx;
+  background: linear-gradient(135deg, #d67f32, #b65b1f);
+  color: #fff;
+  font-size: 26rpx;
+}
+
+.analysis-btn::after {
+  border: none;
+}
+
+.analysis-tip {
+  min-height: 40rpx;
+  margin-bottom: 16rpx;
+  color: #8a6842;
+  font-size: 24rpx;
+}
+
+.analysis-tip.is-loading {
+  color: #b46220;
+}
+
+.analysis-box {
+  background: #fff7eb;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  min-height: 280rpx;
+  transition: opacity 0.2s ease;
+}
+
+.analysis-box.is-refreshing {
+  opacity: 0.76;
+}
+
+.analysis-score {
+  font-size: 34rpx;
+  font-weight: 800;
+  color: #7b4618;
+}
+
+.analysis-summary {
+  margin-top: 14rpx;
+  color: #6a4a28;
+  line-height: 1.7;
+}
+
+.analysis-section {
+  margin-top: 20rpx;
+}
+
+.analysis-label {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #8b572a;
+  margin-bottom: 10rpx;
+}
+
+.analysis-item {
+  color: #6a4a28;
+  line-height: 1.8;
+}
+
+.analysis-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+  padding-top: 6rpx;
+}
+
+.analysis-empty-line {
+  height: 24rpx;
+  border-radius: 999rpx;
+  background: linear-gradient(90deg, #f2e2c9, #f9eddc, #f2e2c9);
+}
+
+.analysis-empty-line.short {
+  width: 45%;
+}
+
